@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp icons/bumblebee.svg /usr/share/pixmaps/
+cp optirun.py /usr/share/kupfer/kupfer/
