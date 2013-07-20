@@ -20,7 +20,7 @@ class Optirun (Action):
         return True
 
     def activate(self, app):
-        argv = app.object.get_commandline().split(' ')
+        argv = utils.argv_for_commandline(app.object.get_commandline())
         for i, arg in enumerate(argv):
             if arg == "%u" or arg == "%U":
                 argv.pop(i)
